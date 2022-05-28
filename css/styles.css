@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap');
+@import './container.css';
+@import './button.css';
+@import './cards-container.css';
+@import './card.css';
+@import './cards-text.css';
+
+:root { 
+  --bg: #242629; 
+  --white: #fffffe; 
+  --border: #eff0f6; 
+  --card__background: #16161a; 
+  --grey: #94a1b2; 
+  --blue-dark: #0e172c; 
+  --purple-ligth: #b69eff; 
+  --purple-dark: #7f5af0; 
+  --h1: 700 3.125rem/normal 'Inter'; 
+  --h2: 700 2rem/normal 'Inter'; 
+  --body1-regular: 400 1.125rem/1.75rem 'Inter'; 
+  --body1-bold: 700 1.125rem/normal 'Inter';     
+  --button: 700 1.125rem/normal 'DM Sans';
+}
+
+body{
+  background-color: var(--bg);
+  color: var(--white);
+  font: var(--body1-regular);
+  margin: 0;
+}

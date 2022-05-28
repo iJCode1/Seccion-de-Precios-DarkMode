@@ -1,0 +1,95 @@
+.cards-text{
+  text-align: center;
+  padding: 5rem 0 2.5rem 0;
+}
+
+.cards-prices{
+  font: var(--button);
+  color: var(--purple-ligth);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin: 0;
+  margin-block-end: 2.5rem;
+}
+
+.cards-title{
+  font: var(--h2);
+  margin: 0;
+  margin-block-end: 0.8125rem;
+}
+
+.cards-info{
+  color: var(--grey);
+  margin: 0 auto;
+  margin-block-end: 2.5rem;
+}
+
+.cards-option{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  gap: .625rem;
+}
+
+.cards-plan{
+  margin: 0;
+}
+
+.cards-select{
+  background-color: var(--grey);
+  border-radius: 1.25rem;
+  padding: 4px 6px;
+  display: flex;
+  inline-size: 4.75rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.cards-select::before{
+  content: '';
+  inline-size: 1.5625rem;
+  block-size: 1.5625rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  transition: transform 1s;
+}
+
+.cards-input{
+  margin: 0;
+  inline-size: 1.5625rem;
+  block-size: 1.5625rem;
+  opacity: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.cards-select.is-annual{
+  background-color: var(--purple-dark);
+}
+
+.cards-select.is-annual::before{
+  transform: translateX(200%);
+}
+
+@media screen and (min-width: 425px){
+  .cards-option{
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .cards-select{
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .cards-title{
+    font: var(--h1);
+  }
+
+  .cards-info{
+    max-inline-size: 37.5rem;
+  }
+}

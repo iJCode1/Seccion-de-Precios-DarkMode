@@ -1,0 +1,124 @@
+.card{
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  border: 1px solid var(--white);
+  background-color: var(--card__background);
+  padding: 1.5rem;
+  max-inline-size: 24.875rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:nth-of-type(3){
+  grid-column: 1/-1;
+}
+
+.card > *{
+  margin: 0;
+}
+
+.card.is-secondary{
+  background-color: var(--purple-ligth);
+  color: var(--blue-dark);
+  border: 1px solid var(--purple-dark);
+}
+
+.card-type{
+  font: var(--h2);
+}
+
+.card-plan,
+.card-info{
+  color: var(--grey);
+  margin-block-end: 1.5rem;
+}
+
+.card.is-secondary > .card-plan,
+.card.is-secondary > .card-info{
+  color: var(--card__background);
+}
+
+.card-price{
+  font: var(--h2);
+  margin-block-end: 1.5rem;
+}
+
+.card-currency{
+  font: var(--body1-bold);
+}
+
+.card-price > .card-time{
+  color: var(--grey);
+  font: var(--body1-bold);
+}
+
+.card.is-secondary > .card-price > .card-time{
+  color: var(--card__background);
+}
+
+.card-benefits{
+  font: var(--button);
+  margin-block-end: 1.25rem;
+}
+
+.card-list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block-end: 2.5rem;
+}
+
+.card-item{
+  position: relative;
+  padding-inline-start: 2.625rem;
+}
+
+.card-item::before{
+  content: '✓';
+  color: var(--white);
+  position: absolute;
+  inline-size: 1.625rem;
+  aspect-ratio: 1/1;
+  background-color: var(--purple-dark);
+  border-radius: 50%;
+  inset-inline-start: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card.is-secondary .card-item::before{
+  background-color: var(--blue-dark);
+}
+
+.card-item.is-inactive{
+  --purple-dark: #7f5af050; 
+  --white: #fffffe50; 
+  color: var(--white);
+}
+
+.card.is-secondary .card-item.is-inactive{
+  --blue-dark: #0e172c50; 
+  color: var(--blue-dark);
+}
+
+.card-button{
+  margin-top: auto;
+}
+
+@media screen and (min-width: 768px){
+  .card{
+    padding: 2.5rem;
+  }
+  .card-type{
+    font: var(--h1);
+  }
+}
+
+@media screen and (min-width: 987px){
+  .card:nth-of-type(3){
+    grid-column: initial;
+  }
+}

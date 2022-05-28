@@ -1,0 +1,22 @@
+.button{
+  font: var(--button);
+  background-color: var(--purple-dark);
+  color: var(--white);
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5.625rem;
+  inline-size: 100%;
+  padding: 1.625rem 0;
+  transition: transform .2s;
+  user-select: none;
+}
+
+.button.is-dark{
+  background-color: var(--blue-dark);
+}
+
+.button:active{
+  transform: scale(.9);
+}
