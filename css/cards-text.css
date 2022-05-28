@@ -1,6 +1,6 @@
 .cards-text{
   text-align: center;
-  padding: 5rem 0 2.5rem 0;
+  padding: 1.5rem 0 2.5rem 0;
 }
 
 .cards-prices{
@@ -79,12 +79,18 @@
     flex-direction: row;
     gap: 1rem;
   }
+
   .cards-select{
     margin: 0;
   }
 }
 
 @media screen and (min-width: 768px){
+  .cards-text{
+    text-align: center;
+    padding: 5rem 0 2.5rem 0;
+  }
+
   .cards-title{
     font: var(--h1);
   }

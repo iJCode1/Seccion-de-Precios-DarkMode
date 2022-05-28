@@ -95,12 +95,12 @@
 
 .card-item.is-inactive{
   --purple-dark: #7f5af050; 
-  --white: #fffffe50; 
+  --white: #fffffe99; 
   color: var(--white);
 }
 
 .card.is-secondary .card-item.is-inactive{
-  --blue-dark: #0e172c50; 
+  --blue-dark: #0e172cb8; 
   color: var(--blue-dark);
 }
 
